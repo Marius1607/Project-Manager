@@ -3,7 +3,7 @@
     position: absolute;
     height: 100%;
     background-color: #1F1B24;
-    z-index: 1;
+    z-index: 2;
     left: -30ex;
     border-right-style: solid;
     border-right: 5px solid #121212;
@@ -36,6 +36,7 @@
     height: 100%;
     float: left;
     clear: left;
+    z-index: 1;
 }
 
 .visible {

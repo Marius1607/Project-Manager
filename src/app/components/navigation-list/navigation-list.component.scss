@@ -1,0 +1,102 @@
+.navigation-list {
+    height: 10%;
+    width: 100%;
+    background-color: #1F1B24;
+    float: right;
+    position: fixed;
+    clear: right;
+    z-index: 0;
+}
+
+.switch-panel {
+    height: 100%;
+    width: 10%;
+    float: right;
+    position: relative;
+}
+
+.switch-frame {
+    border: solid 3px whitesmoke;
+    background-color: white;
+    height: 2ex;
+    width: 8ex;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.switch {
+    position: relative;
+    background-color: black;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.flip-the-switch {
+    -webkit-animation: flip 0.15s forwards;
+    -moz-animation: flip 0.15s forwards;
+    animation: flip 0.15s forwards;
+}
+
+.unflip-the-switch {
+    -webkit-animation: unflip 0.15s forwards;
+    -moz-animation: unflip 0.15s forwards;
+    animation: unflip 0.15s forwards;
+}
+
+@-webkit-keyframes flip {
+    0% {
+        transform: translateX(0ex);
+    }
+    100% {
+        transform: translateX(4ex);
+    }
+}
+
+@-moz-keyframes flip {
+    0% {
+        transform: translateX(0ex);
+    }
+    100% {
+        transform: translateX(4ex);
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: translateX(0ex);
+    }
+    100% {
+        transform: translateX(4ex);
+    }
+}
+
+@-webkit-keyframes unflip {
+    0% {
+        transform: translateX(4ex);
+    }
+    100% {
+        transform: translateX(0ex);
+    }
+}
+
+@-moz-keyframes unflip {
+    0% {
+        transform: translateX(4ex);
+    }
+    100% {
+        transform: translateX(0ex);
+    }
+}
+
+@keyframes unflip {
+    0% {
+        transform: translateX(4ex);
+    }
+    100% {
+        transform: translateX(0ex);
+    }
+}
