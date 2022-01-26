@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Project } from 'src/app/objects/Project';
 import { ArrayUtilitiesService } from 'src/app/services/array-utilities.service';
+
+
 
 @Component({
   selector: 'app-vertical-list',
@@ -13,6 +16,11 @@ export class VerticalListComponent implements OnInit {
   vertical_list = ["vertical-list"];
   project_list = "project-list";
   is_visible = false;
+  projects = [new Project('mock_project', 'mock_description'), 
+    new Project('mock_project_2', 'mock_description_2'),
+    new Project('mock_project_3', 'mock_description_3'),
+    new Project('mock_project_4', 'mock_description_4'),
+    new Project('mock_project_5', 'mock_description_5')];
 
   ngOnInit(): void {
   }

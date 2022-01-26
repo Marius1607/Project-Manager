@@ -10,10 +10,14 @@ export class NavigationListComponent implements OnInit {
 
   switch = ["switch"];
   switch_frame = ["switch-frame"];
+  night_mode_image = "../../assets/images/night-mode.png";
+  light_mode_image = "../../assets/images/light-mode.png";
+
 
   constructor(private array_utilities: ArrayUtilitiesService) { }
   
   ngOnInit(): void {
+   
   }
 
   switchOn(): void {
