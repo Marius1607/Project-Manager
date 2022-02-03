@@ -2,10 +2,20 @@ html {
     height: 100%;
     width: 100%;
     margin: 0;
+    overflow: hidden;
 }
 
 body {
+    overflow: hidden;
     height: 100%;
     width: 100%;
     margin: 0;
+}
+
+.dark {
+    background-color: gray;
+}
+
+h1 {
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

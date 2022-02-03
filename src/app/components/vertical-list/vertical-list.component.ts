@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Project } from 'src/app/objects/Project';
 import { ArrayUtilitiesService } from 'src/app/services/array-utilities.service';
+
+
 
 @Component({
   selector: 'app-vertical-list',
@@ -13,6 +16,18 @@ export class VerticalListComponent implements OnInit {
   vertical_list = ["vertical-list"];
   project_list = "project-list";
   is_visible = false;
+  projects = [new Project('mock_project', 'long mock description for testing the thing about the other thing. It really needs to be long so I may see the behaviour.'), 
+    new Project('mock_project_2', 'mock_description_2'),
+    new Project('mock_project_3', 'mock_description_3'),
+    new Project('mock_project_4', 'mock_description_4'),
+    new Project('mock_project_4', 'mock_description_5'),
+    new Project('mock_project_4', 'mock_description_6'),
+    new Project('mock_project_4', 'mock_description_7'),
+    new Project('mock_project_4', 'mock_description_8'),
+    new Project('mock_project_4', 'mock_description_9'),
+    new Project('mock_project_4', 'mock_description_10'),
+    new Project('mock_project_4', 'mock_description_11'),
+    new Project('mock_project_5', 'mock_description_12')];
 
   ngOnInit(): void {
   }

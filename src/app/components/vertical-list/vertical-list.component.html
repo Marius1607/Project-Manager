@@ -1,7 +1,13 @@
 <div [ngClass]="vertical_list" (mouseleave)="hideDiv()">
     <div id="title_div">
-        <h1>Projects</h1>
+        <h1>PROJECTS</h1>
     </div>
-    <div [ngClass]="project_list"></div>
+    <div [ngClass]="project_list">
+        <ul>
+            <li *ngFor='let project of projects; let i = index'>
+                <app-project [index]='i+1' [title]='project.get_title()' [short_description]='project.get_short_description()'></app-project>
+            </li>
+        </ul>
+    </div>
 </div>
 <div id="invisible_div" (mouseover)="showDiv()"></div>
