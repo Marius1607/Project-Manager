@@ -19,16 +19,19 @@
 
 .title p {
     margin: 0;
+    font-size: 1.1em;
 }
 
 .description {
     width: 80%;
     height: 70%;
     float: right;
+    overflow: hidden;
 }
 
 .description p {
     margin: 0;
+    font-size: small;
 }
 
 .id {
@@ -41,5 +44,4 @@
 
 .id h1 {
     margin: 0;
-    font-size: 3em;
 }
